@@ -38,8 +38,11 @@ public class StringUtilities {
      * @return middle character of `word`
      */
     public Character getMiddleCharacter(String word) {
-        
-        return null;
+        int wordLength = word.length();
+        if(wordLength % 2 == 0){
+            return word.charAt(wordLength/2);
+        }
+        return word.charAt(wordLength/2);
 
     }
 
@@ -49,15 +52,18 @@ public class StringUtilities {
      * @return `value` with char of value `charToRemove` removed
      */
     public String removeCharacter(String value, Character charToRemove) {
-        return null;
-    }
+//        char[] c = value.toCharArray();
+        return value.replaceAll(String.valueOf(charToRemove),"");
+        }
+
 
     /**
      * @param sentence String delimited by spaces representative of a sentence
      * @return last `word` in sentence
      */
     public String getLastWord(String sentence) {
-        return null;
+        String[] arr = sentence.split(" ");
+        return arr[arr.length - 1];
 
     }
 }
