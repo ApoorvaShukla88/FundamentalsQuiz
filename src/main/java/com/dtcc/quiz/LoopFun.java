@@ -8,6 +8,14 @@ public class LoopFun {
      * @return the factorial of the number
      */
     public Integer factorial(Integer number){
+        if(number == 1){ return 1;}
+        if(number == 2){ return 2;}
+        if(number > 2) {
+            for (int i = 2; i <= number; i++) {
+                number *= i;
+                return number;
+            }
+        }
         return null;
 }
 
@@ -18,7 +26,13 @@ public class LoopFun {
      * @param phrase
      * @return Upper case string of the first letter of each word
      */
+
     public String acronym(String phrase) {
+
+
+
+
+
        return null;
     }
 
